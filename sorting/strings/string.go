@@ -15,5 +15,7 @@ func main() {
 	if !ok {
 		sort.Strings(s)
 		fmt.Println(s)
+		sort.Sort(sort.Reverse(sort.StringSlice(s)))
+		fmt.Println(s)
 	}
 }
