@@ -11,7 +11,6 @@ func main() {
 }
 func send(s chan<- int) {
 	for i := 0; i < 5; i++ {
-
 		s <- i
 	}
 	close(s)

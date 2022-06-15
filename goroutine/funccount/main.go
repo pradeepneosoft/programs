@@ -23,7 +23,6 @@ func main() {
 		go countcalls()
 	}
 	wg.Wait()
-
 }
 func show() {
 	defer wg.Done()

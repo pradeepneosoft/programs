@@ -21,7 +21,6 @@ func send(even chan<- int, odd chan<- int, q chan<- bool) {
 		} else {
 			odd <- i
 		}
-
 	}
 	q <- true
 	close(even)
